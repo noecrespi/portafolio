@@ -32,13 +32,20 @@ module.exports = {
         new HtmlWebpackPlugin({ template: './src/index.html' }),
         new CopyPlugin({
             patterns: [
-                { from: "src/assets", to: "assets" },
+                { from: "src/style.css" },
+                { from: "src/assets", to: "assets"}
 
             ],
         }),
     ],
     module: {
         rules: [
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                use: [
+                    'file-loader',
+                ],
+            },
             {
                 test: /\.(scss)$/,
                 use: [

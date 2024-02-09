@@ -1,0 +1,35 @@
+/* Agrega esta regla para estilizar la línea debajo de cada enlace */
+.nav-link {
+    position: relative;
+}
+
+.nav-link .navbar-line {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: $corporate-color;
+    /* Reemplaza esto con el color que desees */
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-link:hover .navbar-line,
+.nav-item:hover .nav-link .navbar-line,
+.navbar .active .navbar-line {
+    visibility: visible;
+    width: 25px;
+    /* Ancho de la línea al pasar el mouse */
+}
+
+// section {
+//     overflow: hidden;
+//     position: absolute;
+//     width: 100%;
+//     top: 140px;
+//     bottom: 100%;
+//     opacity: 0;
+//     transition: ease-in-out 0.4s;
+//     z-index: 2;
+//   }

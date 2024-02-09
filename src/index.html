@@ -10,64 +10,93 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">
 
+        <!-- implementar scss  -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5PLHJE595J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5PLHJE595J');
+</script>
 </head>
 
 <body>
 
-    <head id="header">
-        <div>
-            <h1> <a href="./index.html">Noelia Crespí</a></h1>
-            <h2>Crafting <span>visual</span> wonders and <span>digital</span> experiences, my life is a canvas of
-                passion</h2>
-            <h2>As a <span>graphic</span> and <span>web designer</span>web designer, I breathe life into pixels, turning
-                passion into design</h2>
+    <header id="header" class="d-flex align-items-center">
+        <div class="container">
+            <h1 class="mb-3"><a href="./index.html" class="text-white">Noelia Crespí</a></h1>
+            <h2 class="text-white mb-3">Crafting <span class="">visual</span> wonders and <span
+                    class="">digital</span> experiences, my life is a canvas of passion</h2>
+            <h2 class="text-white mb-3">As a <span class="">graphic</span> and <span
+                    class="">web designer</span>, I breathe life into pixels, turning passion into design</h2>
             <!-- Navegador -->
-            <nav class="nav">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#header">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-me">Sobre mi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#resume">Resumen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portafolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contacto</a>
-                    </li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav>
+            <!-- Navegador -->
+<nav class="navbar navbar-expand-lg navbar-dark mb-3">
+    <div class="collapse navbar-collapse mb-3">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item pr-3">
+                <a class="nav-link active" aria-current="page" href="#header">
+                    Home
+                    <span class="navbar-line"></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about-me">
+                    Sobre mi
+                    <span class="navbar-line"></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#resume">
+                    Resumen
+                    <span class="navbar-line"></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#services">
+                    Servicios
+                    <span class="navbar-line"></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio">
+                    Portafolio
+                    <span class="navbar-line"></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                    Contacto
+                    <span class="navbar-line"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-            <!-- social links -->
-            <div class="">
+    
+            <!-- social  -->
+            <div class="social">
                 <a href="https://www.linkedin.com/in/noelia-cresp%C3%AD-pomar-571078192/" target="_blank"
-                    class="linkedin">
-                    <i class="bi bi-linkedin"></i>
-                </a>
-                <a href="#">
-                    <i class="bi bi-instagram"></i>
-                </a>
-                <a href="#" class="facebook">
-                    <i class="bi bi-facebook"></i>
-                </a>
+                    class="linkedin"><i class="bi bi-linkedin fs-3 m-2 p-2 "></i></a>
+                <a href="#"><i class="bi bi-instagram fs-3  m-2 p-2"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook fs-3 m-2 p-2"></i></a>
             </div>
         </div>
-    </head>
+    </header>
+    
 
 
 
     <main>
         <!-- About me  -->
-        <section id="about-me">
-            <div>
+        <section id="about-me" class="about section-show">
+            <div class="about-me container">
+            <div class="section-title">
                 <h2>Sobre mi</h2>
                 <p>Más información sobre mi</p>
             </div>
@@ -109,6 +138,7 @@
                     <p>
                         lorem
                     </p>
+                </div>
 
                     <!-- Habilitis -->
                     <div>
@@ -236,7 +266,7 @@
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="./assets/Opcion_2.jpeg" class="d-block w-100" alt="...">
+                        <img src="./assets/css_sprites.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
                         <img src="./assets/Opcion_2.jpeg" class="d-block w-100" alt="...">
@@ -348,6 +378,7 @@
     </main>
 
     <script src="./index.bundle.js "></script>
+
 
 </body>
 
