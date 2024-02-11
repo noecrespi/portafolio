@@ -1,4 +1,15 @@
 /* Header Top */
+
+/* Agrega la clase fixed-top para la barra de navegación fija */
+#header.navbar.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000; /* Ajusta el z-index según sea necesario */
+}
+
 #header.header-top {
     height: 80px;
     position: fixed;
