@@ -3,16 +3,22 @@
   border-bottom: 2px solid $corporate-color;
   padding-bottom: 6px;
 }
+#header h2{
+  color: #ffffffa7;
+  font-size: 1.5rem;
+}
 
-
-
-// imagen de fondo con la variable $background-image
-// head{
-//     background-image: $perfil-image;
-// }
+#header h1 , .style-title {
+  font-size: 48px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
 
 header {
-  background-color: black;
+  background-color: $corporate-color2;
   background-repeat: no-repeat;
   background-size: cover;
   overflow-y: auto;
@@ -44,16 +50,6 @@ header {
   right: 0;
 }
 
-
-
-// --------------------------
-// body {
-//   font-family: "Open Sans", sans-serif;
-//   background-color: #040404;
-//   color: #fff;
-//   position: relative;
-//   background: transparent;
-// }
 
 body::before {
   content: "";

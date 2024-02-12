@@ -23,13 +23,21 @@
     /* Ancho de la línea al pasar el mouse */
 }
 
-// section {
-//     overflow: hidden;
-//     position: absolute;
-//     width: 100%;
-//     top: 140px;
-//     bottom: 100%;
-//     opacity: 0;
-//     transition: ease-in-out 0.4s;
-//     z-index: 2;
-//   }
+section {
+    overflow: hidden;
+    width: 100%;
+    top: 140px;
+    bottom: 100%;
+    transition: ease-in-out 0.4s;
+    z-index: 2;
+  }
+
+
+  .section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: $corporate-color;
+    margin: 4px 10px;
+  }

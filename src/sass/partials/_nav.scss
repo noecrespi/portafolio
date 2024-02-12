@@ -8,23 +8,16 @@
   right: 0;
   background: rgba(0, 0, 0, 0.9);
   z-index: 1000; /* Ajusta el z-index según sea necesario */
+  height: 80px !important; /* Ajusta la altura según sea necesario */
 }
 
-#header.header-top {
-    height: 80px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.9);
-  }
   
   #header.header-top .social-links,
   #header.header-top h2 {
     display: none;
   }
   
-  #header.header-top h1 {
+  .header-top h1 {
     margin-right: auto;
     font-size: 36px;
   }

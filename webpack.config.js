@@ -29,12 +29,22 @@ module.exports = {
         hot: true
     },
     plugins: [
-        new HtmlWebpackPlugin({ template: './src/index.html' }),
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: './src/index.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'about_me.html',
+            template: './src/Sections/about_me.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'portafolio.html',
+            template: './src/Sections/portafolio.html'
+        }),
         new CopyPlugin({
             patterns: [
                 { from: "src/style.css" },
-                { from: "src/assets", to: "assets"}
-
+                { from: "src/assets", to: "assets" },
             ],
         }),
     ],

@@ -4,15 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Noelia Crespí</title>
-
-    <!-- Import icons -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">
-
-    <!-- implementar scss  -->
+    <title>Portafolio</title>
     <link rel="stylesheet" href="./style.css">
 
+    <!-- Import icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PLHJE595J"></script>
     <script>
@@ -24,53 +20,46 @@
     </script>
 </head>
 
-<body>
-
-
-    <header id="header" class="d-flex align-items-center">
-
-        <div class="container">
-            <h1 class="mb-3"><a href="./index.html" class="text-white">Noelia Crespí</a></h1>
-            <!-- <h2 class="text-white mb-3">Crafting <span class="">visual</span> wonders and <span class="">digital</span>
-                experiences, my life is a canvas of passion</h2> -->
-            <h2 class="mb-3">As a <span class="">graphic</span> and <span>web designer</span>, I
-                breathe life into pixels, turning passion into design</h2>
-
-
-            <nav id="navbar" class="navbar navbar-expand-lg navbar-dark mb-3">
-                <div class="collapse navbar-collapse mb-3">
+<body style="height: 100vh">
+    <div class="corporate-color2-bg">
+        <nav id="navbar" class=" navbar navbar-expand-lg navbar-dark d-flex justify-content-between">
+            <div>
+                <h1 class="m-3 "><a href="index.html" class="text-white">Noelia Crespí</a></h1>
+            </div>
+            <div >
+                <div class="collapse navbar-collapse">
                     <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item pr-3">
-                            <a class="nav-link active" aria-current="page" href="#header">
+                        <li class="nav-item p-3">
+                            <a class="nav-link" href="index.html">
                                 Home
                                 <span class="navbar-line"></span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about_me.html">
+                        <li class="nav-item p-3">
+                            <a class="nav-link" aria-current="page" href="about_me.html">
                                 Sobre mi
                                 <span class="navbar-line"></span>
                             </a>
                         </li>
-                        <!-- <li class="nav-item">
+                        <!-- <li class="nav-item p-3">
                             <a class="nav-link" href="#resume">
                                 Resumen
                                 <span class="navbar-line"></span>
                             </a>
                         </li> -->
-                        <!-- <li class="nav-item">
+                        <!-- <li class="nav-item p-3">
                             <a class="nav-link" href="#services">
                                 Servicios
                                 <span class="navbar-line"></span>
                             </a>
                         </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="portafolio.html">
+                        <li class="nav-item p-3">
+                            <a class="nav-link active" aria-current="page" href="portafolio.html">
                                 Portafolio
                                 <span class="navbar-line"></span>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item p-3">
                             <a class="nav-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop">
                                 Spinners
@@ -79,26 +68,134 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
-
-
-
-            <div class="social">
-                <a href="https://www.linkedin.com/in/noelia-cresp%C3%AD-pomar-571078192/" target="_blank"
-                    class="linkedin" data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin">
-                    <i class="bi bi-linkedin fs-3 m-2 p-2 "></i>
-                </a>
-                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram">
-                    <i class="bi bi-instagram fs-3 m-2 p-2"></i>
-                </a>
-                <a href="#" class="facebook" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook">
-                    <i class="bi bi-facebook fs-3 m-2 p-2"></i>
-                </a>
             </div>
-        </div>
-    </header>
+        </nav>
+    </div>
+    <main>
+        <div>
+            <section id="portfolio">
+                <div class=" container bg-black text-white bg-opacity-75">
+            <div>
+                <h2>Portafolio</h2>
+                <p>Mis trabajos</p>
+            </div>
+            <div id="carouselExampleInterval" class="carousel slide mb-3" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./assets/carrusel/EB349241-08EE-4D7F-9168-84FBC8329BFF_1_201_a.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./assets/carrusel/BFF6E2CF-A4B6-4005-9127-519AC540D9F7_1_105_c.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./assets/carrusel/F672CAAE-29F6-4B4C-B70D-19DEAA36B719_1_201_a.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/carrusel/DEFE3746-CF3B-483B-8ADA-304ED49689FA_1_201_a.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    <!-- cuadrado de img -->
+    <div class="container row">
+                <div class="col-lg-4 col-md-6 portfolio-item">
+                    <div class="portfolio-wrap">
+                        <img src="./assets/Opcion_2.jpeg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>App 1</h4>
+                            <p>App</p>
+                            <div class="portfolio-links">
+                                <a href="./assets/Opcion_2.jpeg" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery"
+                                    data-glightbox="type: external" class="portfolio-details-lightbox"
+                                    title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- Modal -->
+                <div class="col-lg-4 col-md-6 portfolio-item">
+                    <div class="portfolio-wrap">
+                        <img src="./assets/Opcion_2.jpeg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>App 1</h4>
+                            <p>App</p>
+                            <div class="portfolio-links">
+                                <a href="./assets/Opcion_2.jpeg" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery"
+                                    data-glightbox="type: external" class="portfolio-details-lightbox"
+                                    title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item">
+                    <div class="portfolio-wrap">
+                        <img src="./assets/Opcion_2.jpeg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>App 1</h4>
+                            <p>App</p>
+                            <div class="portfolio-links">
+                                <a href="./assets/Opcion_2.jpeg" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery"
+                                    data-glightbox="type: external" class="portfolio-details-lightbox"
+                                    title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item">
+                    <div class="portfolio-wrap">
+                        <img src="..." class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>App 1</h4>
+                            <p>App</p>
+                            <div class="portfolio-links">
+                                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery"
+                                    data-glightbox="type: external" class="portfolio-details-lightbox"
+                                    title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item">
+                    <div class="portfolio-wrap">
+                        <img src="..." class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>App 1</h4>
+                            <p>App</p>
+                            <div class="portfolio-links">
+                                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery"
+                                    data-glightbox="type: external" class="portfolio-details-lightbox"
+                                    title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        </div>
+    </main>
+
+
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -119,191 +216,9 @@
             </div>
         </div>
     </div>
-
-    <!-- Resume  -->
-    <section id="resume" class="resume ">
-        <div class=" counts container container bg-black text-white bg-opacity-75">
-            <div>
-                <h2>Resumen</h2>
-                <p>Mi resumen:</p>
-            </div>
-            <div class="row gy-5 d-flex">
-                <div class="col-6">
-                    <h3>ducaión</h3>
-
-                    <!-- 1 resume -->
-                    <div>
-                        <h4>cole</h4>
-                        <h5>Años - años </h5>
-                        <p>explicacion</p>
-                        <p>explicacion</p>
-                    </div>
-                    <!-- 2 resume -->
-                    <div>
-                        <h4>cole</h4>
-                        <h5>Años - años </h5>
-                        <p>explicacion</p>
-                        <p>explicacion</p>
-                    </div>
-                    <!-- 3 resume -->
-                    <div>
-                        <h4>cole</h4>
-                        <h5>Años - años </h5>
-                        <p>explicacion</p>
-                        <p>explicacion</p>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <h3>Trayectoria profesional</h3>
-                    <div>
-                        <h4>Trabajo</h4>
-                        <h5>Años - años </h5>
-                        <p>explicacion</p>
-                        <p>explicacion</p>
-                    </div>
-                    <div>
-                        <h4>Trabajo</h4>
-                        <h5>Años - años </h5>
-                        <p>explicacion</p>
-                        <p>explicacion</p>
-                    </div>
-                    <div>
-                        <h4>Trabajo</h4>
-                        <h5>Años - años </h5>
-                        <p>explicacion</p>
-                        <p>explicacion</p>
-                    </div>
-                    <div>
-                        <h4>Trabajo</h4>
-                        <h5>Años - años </h5>
-                        <p>explicacion</p>
-                        <p>explicacion</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Service  -->
-
-    <!-- Portafolio  -->
-    <!-- <section id="portfolio">
-            <div>
-                <h2>Portafolio</h2>
-                <p>Mis trabajos</p>
-            </div>
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="./assets/css_sprites.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./assets/Opcion_2.jpeg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/Opcion_2.jpeg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div> -->
-    <!-- cuadrado de img -->
-    <!-- <div class="container row">
-                <div class="col-lg-4 col-md-6 portfolio-item">
-                    <div class="portfolio-wrap">
-                        <img src="./assets/Opcion_2.jpeg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 1</h4>
-                            <p>App</p>
-                            <div class="portfolio-links">
-                                <a href="./assets/Opcion_2.jpeg" data-gallery="portfolioGallery"
-                                    class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery"
-                                    data-glightbox="type: external" class="portfolio-details-lightbox"
-                                    title="Portfolio Details"><i class="bx bx-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item">
-                    <div class="portfolio-wrap">
-                        <img src="./assets/Opcion_2.jpeg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 1</h4>
-                            <p>App</p>
-                            <div class="portfolio-links">
-                                <a href="./assets/Opcion_2.jpeg" data-gallery="portfolioGallery"
-                                    class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery"
-                                    data-glightbox="type: external" class="portfolio-details-lightbox"
-                                    title="Portfolio Details"><i class="bx bx-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item">
-                    <div class="portfolio-wrap">
-                        <img src="./assets/Opcion_2.jpeg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 1</h4>
-                            <p>App</p>
-                            <div class="portfolio-links">
-                                <a href="./assets/Opcion_2.jpeg" data-gallery="portfolioGallery"
-                                    class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery"
-                                    data-glightbox="type: external" class="portfolio-details-lightbox"
-                                    title="Portfolio Details"><i class="bx bx-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item">
-                    <div class="portfolio-wrap">
-                        <img src="..." class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 1</h4>
-                            <p>App</p>
-                            <div class="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
-                                    class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery"
-                                    data-glightbox="type: external" class="portfolio-details-lightbox"
-                                    title="Portfolio Details"><i class="bx bx-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item">
-                    <div class="portfolio-wrap">
-                        <img src="..." class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 1</h4>
-                            <p>App</p>
-                            <div class="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
-                                    class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery"
-                                    data-glightbox="type: external" class="portfolio-details-lightbox"
-                                    title="Portfolio Details"><i class="bx bx-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section> -->
-    <!-- Contact -->
-    <script src="./index.bundle.js "></script>
 </body>
+
+<script src="./index.bundle.js "></script>
+
 
 </html>
